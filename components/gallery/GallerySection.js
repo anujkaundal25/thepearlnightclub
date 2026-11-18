@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const photos = [
   { src: "/gallery/1.jpg", title: "Luxury Bar Interior" },
-  { src: "/gallery/2.jpg", title: "Beach Party Sunset" },
-  { src: "/gallery/3.jpg", title: "Nightclub Dance Floor" },
-  { src: "/gallery/4.jpg", title: "Red Carpet Arrival" },
-  { src: "/gallery/5.jpg", title: "Rooftop Party" },
-  { src: "/gallery/6.jpg", title: "Champagne Celebration" },
+  { src: "/gallery/gallery1.webp", title: "Beach Party Sunset" },
+  { src: "/gallery/gallery2.webp", title: "Nightclub Dance Floor" },
+  { src: "/gallery/gallery3.webp", title: "Red Carpet Arrival" },
+  { src: "/gallery/gallery4.webp", title: "Rooftop Party" },
+  { src: "/gallery/gallery5.webp", title: "Champagne Celebration" },
 ];
 
 export default function GallerySection() {
