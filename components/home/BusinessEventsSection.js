@@ -53,7 +53,7 @@ export default function BusinessEventsSection() {
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
           <div className="relative aspect-[16/9] overflow-hidden border border-[#E5B664]/60">
             <Image
-              src="/home/offer1.png"
+              src="/home/new1.webp"
               alt="Guests networking at The Pearl"
               fill
               sizes="(max-width: 640px) 100vw, 50vw"
@@ -62,7 +62,7 @@ export default function BusinessEventsSection() {
           </div>
           <div className="relative aspect-[16/9] overflow-hidden border border-[#E5B664]/60">
             <Image
-              src="/gallery/gallery3.webp"
+              src="/home/new2.webp"
               alt="Guests arriving along a red carpet"
               fill
               sizes="(max-width: 640px) 100vw, 50vw"
