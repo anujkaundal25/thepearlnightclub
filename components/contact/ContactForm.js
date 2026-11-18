@@ -55,10 +55,10 @@ export default function ContactForm() {
   };
 
   const contactInfo = [
-    { icon: <FaWhatsapp />, label: "WhatsApp", value: "+1 (305) 555-PEARL" },
+    { icon: <FaWhatsapp />, label: "WhatsApp", value: "61 410 036 729" },
     { icon: <FaInstagram />, label: "Instagram", value: "@thepearlbarclub" },
     { icon: <FaFacebookF />, label: "Facebook", value: "/thepearlbarclub" },
-    { icon: <FaEnvelope />, label: "Email", value: "reservations@thepearlbarclub.com" },
+    { icon: <FaEnvelope />, label: "Email", value: "thepearl149@hotmail.com" },
     { icon: <FaGlobe />, label: "Website", value: "www.thepearlbarclub.com" },
     { icon: <FaMapMarkerAlt />, label: "Location", value: "777 Ocean Drive, Miami, FL 33139" },
     { icon: <FaClock />, label: "Opening Hours", value: "Thu–Sat • 8PM – 3AM" },

@@ -80,7 +80,7 @@ export default function Footers() {
               </li>
               <li className="flex items-start gap-3">
                 <FaPhoneAlt size={16} className="text-[#E5B664] mt-1 shrink-0" />
-                <span>+61 410 036 729</span>
+                <span>61 410 036 729</span>
               </li>
             </ul>
           </div>
