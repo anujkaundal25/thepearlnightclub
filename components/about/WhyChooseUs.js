@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
                 key={index}
                 className="flex flex-col items-center text-center group"
               >
-                <div className="w-40 h-40 rounded-full bg-[#111111] border border-[#E5B664]/20 flex items-center justify-center mb-8 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:border-[#E5B664]/60">
+                <div className="w-28 h-28 rounded-full bg-[#111111] border border-[#E5B664]/20 flex items-center justify-center mb-8 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:border-[#E5B664]/60">
                   <Icon size={56} strokeWidth={1.4} className="text-[#E5B664]" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
