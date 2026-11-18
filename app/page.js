@@ -3,6 +3,7 @@
 
 import HeroSlider from "../components/home/HeroSlider.js"
 import EventCategories from "../components/home/EventCategories.js"
+import BusinessEventsSection from "../components/home/BusinessEventsSection.js"
 import AboutSection from "../components/home/AboutSection.js"
 import UpcomingEvents from "../components/home/UpcomingEvents.js"
 import WhyChooseUs from './../components/about/WhyChooseUs';
@@ -15,6 +16,7 @@ export default function HomePageClient() {
     <>
       <HeroSlider />
       <EventCategories />
+      <BusinessEventsSection />
       <AboutSection />
       <WhyChooseUs />
       <WhatWeOffer/>

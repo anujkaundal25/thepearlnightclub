@@ -31,10 +31,10 @@ export default function Footers() {
               <a href="#" aria-label="WhatsApp" className="w-9 h-9 flex items-center justify-center rounded-full border border-[#E5B664]/40 text-[#E5B664] hover:bg-[#E5B664] hover:text-black transition-all">
                 <FaWhatsapp size={16} />
               </a>
-              <a href="#" aria-label="Instagram" className="w-9 h-9 flex items-center justify-center rounded-full border border-[#E5B664]/40 text-[#E5B664] hover:bg-[#E5B664] hover:text-black transition-all">
+              <a href="https://www.instagram.com/the_pearl_2015?lqvp=MTZ2NGcxdmo4MWp6cg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 flex items-center justify-center rounded-full border border-[#E5B664]/40 text-[#E5B664] hover:bg-[#E5B664] hover:text-black transition-all">
                 <FaInstagram size={16} />
               </a>
-              <a href="#" aria-label="Facebook" className="w-9 h-9 flex items-center justify-center rounded-full border border-[#E5B664]/40 text-[#E5B664] hover:bg-[#E5B664] hover:text-black transition-all">
+              <a href="https://www.facebook.com/thepearladelaide?mibextid=wwXIfr&rdid=KqCw3RnURrAQiYfD&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JSb87Yz3W%2F%3Fmibextid%3DwwXIfr%26ref%3D1#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 flex items-center justify-center rounded-full border border-[#E5B664]/40 text-[#E5B664] hover:bg-[#E5B664] hover:text-black transition-all">
                 <FaFacebookF size={16} />
               </a>
             </div>

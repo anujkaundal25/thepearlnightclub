@@ -56,8 +56,18 @@ export default function ContactForm() {
 
   const contactInfo = [
     { icon: <FaWhatsapp />, label: "WhatsApp", value: "61 410 036 729" },
-    { icon: <FaInstagram />, label: "Instagram", value: "@thepearlbarclub", href: "#" },
-    { icon: <FaFacebookF />, label: "Facebook", value: "/thepearlbarclub", href: "#" },
+    {
+      icon: <FaInstagram />,
+      label: "Instagram",
+      value: "@the_pearl_2015",
+      href: "https://www.instagram.com/the_pearl_2015?lqvp=MTZ2NGcxdmo4MWp6cg%3D%3D&utm_source=qr",
+    },
+    {
+      icon: <FaFacebookF />,
+      label: "Facebook",
+      value: "/thepearladelaide",
+      href: "https://www.facebook.com/thepearladelaide?mibextid=wwXIfr&rdid=KqCw3RnURrAQiYfD&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JSb87Yz3W%2F%3Fmibextid%3DwwXIfr%26ref%3D1#",
+    },
     { icon: <FaEnvelope />, label: "Email", value: "thepearl149@hotmail.com" },
     {
       icon: <FaGlobe />,
@@ -179,6 +189,8 @@ export default function ContactForm() {
                   {item.href ? (
                     <a
                       href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white/90 text-sm sm:text-base hover:text-[#E5B664] hover:underline underline-offset-4"
                     ><br/>
                       {item.value}
