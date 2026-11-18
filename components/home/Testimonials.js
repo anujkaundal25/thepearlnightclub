@@ -52,23 +52,23 @@ export default function Testimonials() {
         <div
           className="text-center mb-12"
         >
-          <h4 className="text-[#d4af37] tracking-widest mb-2 text-sm">TESTIMONIALS</h4>
+          <h4 className="text-[#E5B664] tracking-widest mb-2 text-sm">TESTIMONIALS</h4>
           <h2 className="text-4xl md:text-5xl font-normal mb-3 text-white">What People Say</h2>
-          <div className="w-16 h-0.5 bg-[#d4af37] mx-auto"></div>
+          <div className="w-16 h-0.5 bg-[#E5B664] mx-auto"></div>
         </div>
 
         <button
           className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 
-          w-12 h-12 flex items-center justify-center rounded-full bg-[#d4af37]/20 border border-[#d4af37]/40 
-          hover:bg-[#d4af37] hover:text-black transition z-30 text-[#d4af37]"
+          w-12 h-12 flex items-center justify-center rounded-full bg-[#E5B664]/20 border border-[#E5B664]/40 
+          hover:bg-[#E5B664] hover:text-black transition z-30 text-[#E5B664]"
         >
           <ChevronLeft size={22} />
         </button>
 
         <button
           className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 
-          w-12 h-12 flex items-center justify-center rounded-full bg-[#d4af37]/20 border border-[#d4af37]/40 
-          hover:bg-[#d4af37] hover:text-black transition z-30 text-[#d4af37]"
+          w-12 h-12 flex items-center justify-center rounded-full bg-[#E5B664]/20 border border-[#E5B664]/40 
+          hover:bg-[#E5B664] hover:text-black transition z-30 text-[#E5B664]"
         >
           <ChevronRight size={22} />
         </button>
@@ -92,12 +92,12 @@ export default function Testimonials() {
                 <img
                   src={t.image}
                   alt={t.name}
-                  className="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-[#d4af37] shadow-lg object-cover"
+                  className="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-[#E5B664] shadow-lg object-cover"
                 />
                 <p className="text-[22px] font-semibold text-white/90 max-w-4xl mx-auto mb-6 leading-relaxed">
                   {t.message}
                 </p>
-                <h3 className="text-2xl font-bold text-[#d4af37]">{t.name}</h3>
+                <h3 className="text-2xl font-bold text-[#E5B664]">{t.name}</h3>
                 <p className="text-gray-400 text-lg">{t.role}</p>
               </div>
             </SwiperSlide>

@@ -3,17 +3,17 @@ import { GiMartini, GiGlassCelebration, GiMusicalNotes } from "react-icons/gi";
 
 const features = [
   {
-    icon: <GiMartini size={44} className="text-[#d4af37]" />,
+    icon: <GiMartini size={44} className="text-[#E5B664]" />,
     title: "Signature Menu",
     desc: "Handcrafted cocktails, fine wines & curated small plates crafted by our mixologists.",
   },
   {
-    icon: <GiGlassCelebration size={44} className="text-[#d4af37]" />,
+    icon: <GiGlassCelebration size={44} className="text-[#E5B664]" />,
     title: "Champagne Lounge",
     desc: "Premium champagne selection in our exclusive lounge area for intimate gatherings and celebrations.",
   },
   {
-    icon: <GiMusicalNotes size={44} className="text-[#d4af37]" />,
+    icon: <GiMusicalNotes size={44} className="text-[#E5B664]" />,
     title: "Evening Experience",
     desc: "Live music, curated ambiance, and VIP service every night from 6pm until late.",
   },
@@ -27,12 +27,12 @@ export default function BarFeatures() {
           {features.map((feature, idx) => (
             <div
               key={idx}
-              className="gold-frame bg-[#111111]/80 border border-[#d4af37]/20 rounded-lg p-8 text-center card-lift"
+              className="gold-frame bg-[#111111]/80 border border-[#E5B664]/20 rounded-lg p-8 text-center card-lift"
             >
-              <div className="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-[#d4af37]/10 border border-[#d4af37]/30 mb-6">
+              <div className="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-[#E5B664]/10 border border-[#E5B664]/30 mb-6">
                 {feature.icon}
               </div>
-              <h3 className="text-[#d4af37] text-2xl font-serif font-semibold mb-3">
+              <h3 className="text-[#E5B664] text-2xl font-serif font-semibold mb-3">
                 {feature.title}
               </h3>
               <p className="text-white/70 text-sm leading-relaxed">

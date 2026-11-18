@@ -5,15 +5,15 @@ export default function BarHero() {
       <div className="absolute inset-0">
         <div
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/bar-counter-drinks.jpg')` }}
+          style={{ backgroundImage: `url('/hero-section/bar-hero-bg.jpeg')` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/25" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-20">
-        <div className="max-w-2xl">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-20 text-center">
+        <div className="max-w-2xl mx-auto">
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
             <span className="gold-text">THE BAR</span>{" "}
             <span className="text-white italic font-light">— Sip Luxury</span>
@@ -21,7 +21,7 @@ export default function BarHero() {
           <p className="text-white/80 text-lg sm:text-xl mt-5 font-light leading-relaxed">
             Elegant Evenings, Curated Menu, Unforgettable Atmosphere
           </p>
-          <div className="gold-divider w-40 mt-7" />
+          <div className="gold-divider w-40 mt-7 mx-auto" />
         </div>
       </div>
     </section>

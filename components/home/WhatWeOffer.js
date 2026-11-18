@@ -10,7 +10,7 @@ export default function WhatWeOffer() {
         <h2 className="text-4xl md:text-5xl font-bold text-white">What We Offer</h2>
 
         <div className="flex justify-center mt-4 mb-10">
-          <span className="w-16 h-[3px] bg-[#d4af37] rounded-full"></span>
+          <span className="w-16 h-[3px] bg-[#E5B664] rounded-full"></span>
         </div>
 
         <p className="text-gray-400 mb-16 text-lg">
@@ -42,7 +42,7 @@ export default function WhatWeOffer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="bg-[#111111] rounded-lg overflow-hidden shadow-lg border border-[#d4af37]/15 card-lift"
+              className="bg-[#111111] rounded-lg overflow-hidden shadow-lg border border-[#E5B664]/15 card-lift"
             >
               <img
                 src={card.img}
@@ -50,7 +50,7 @@ export default function WhatWeOffer() {
                 className="w-full h-72 object-cover hover:scale-105 transition duration-500"
               />
               <div className="py-6 px-6">
-                <h3 className="text-xl font-bold text-[#d4af37] mb-2">{card.title}</h3>
+                <h3 className="text-xl font-bold text-[#E5B664] mb-2">{card.title}</h3>
                 <p className="text-gray-400">{card.desc}</p>
               </div>
             </motion.div>

@@ -9,42 +9,31 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <div
           className="w-full h-full bg-cover bg-center scale-105"
-          style={{ backgroundImage: `url('/home/bg.jpg')` }}
+          style={{ backgroundImage: `url('/hero-section/home-hero-bg.jpeg')` }}
         />
         {/* Gold confetti / dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.6)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/25 to-black/65" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.35)_100%)]" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 min-h-[90vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-10 pb-28">
         {/* Center Logo */}
-        <div
-          className="mb-6"
-        >
+        <div className="mb-6">
           <Image
-            src="/logo-pearl.png"
+            src="/logo.jpg"
             alt="The Pearl Gold Shell Logo"
-            width={120}
-            height={120}
+            width={220}
+            height={220}
             className="object-contain mx-auto"
-            style={{ filter: "drop-shadow(0 0 25px rgba(212,175,55,0.5))" }}
+            style={{ filter: "drop-shadow(0 0 12px rgba(212,175,55,0.5))" }}
             priority
           />
-          <div className="mt-3">
-            <p className="text-[#d4af37] text-sm tracking-[0.3em] uppercase font-light">The</p>
-            <h2 className="gold-text font-serif text-5xl sm:text-6xl md:text-7xl font-bold leading-none tracking-wide">
-              PEARL
-            </h2>
-            <p className="text-white/60 text-xs sm:text-sm tracking-[0.4em] uppercase mt-2">
-              Bar | Club | Event
-            </p>
-          </div>
         </div>
 
         {/* Headline */}
         <h1
-          className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mt-6 font-serif italic"
+          className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mt-6 font-serif"
         >
           Join Us For An Exclusive Night
         </h1>
@@ -61,11 +50,11 @@ export default function HeroSection() {
         <div
           className="w-full max-w-5xl mt-10 px-2"
         >
-          <div className="bg-[#111111]/90 backdrop-blur-md rounded-md shadow-2xl overflow-hidden border border-[#d4af37]/40 gold-frame">
+          <div className="bg-[#111111]/90 backdrop-blur-md rounded-md shadow-2xl overflow-hidden border border-[#E5B664]/40 gold-frame">
             <div className="flex flex-col md:flex-row items-stretch">
               {/* Input Field */}
-              <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#d4af37]/20 flex-1">
-                <FiSearch className="text-[#d4af37] text-xl shrink-0" />
+              <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#E5B664]/20 flex-1">
+                <FiSearch className="text-[#E5B664] text-xl shrink-0" />
                 <input
                   type="text"
                   placeholder="Enter name"
@@ -74,8 +63,8 @@ export default function HeroSection() {
               </div>
 
               {/* Category Select */}
-              <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#d4af37]/20 flex-1 relative">
-                <MdCategory className="text-[#d4af37] text-xl shrink-0" />
+              <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#E5B664]/20 flex-1 relative">
+                <MdCategory className="text-[#E5B664] text-xl shrink-0" />
                 <select className="w-full bg-transparent text-white text-base outline-none appearance-none cursor-pointer">
                   <option className="bg-[#111]">Select Category</option>
                   <option className="bg-[#111]">Bar</option>
@@ -84,12 +73,12 @@ export default function HeroSection() {
                   <option className="bg-[#111]">VIP</option>
                   <option className="bg-[#111]">Overseas Events</option>
                 </select>
-                <FiCalendar className="text-[#d4af37] text-sm ml-auto" />
+                <FiCalendar className="text-[#E5B664] text-sm ml-auto" />
               </div>
 
               {/* Date */}
-              <div className="flex items-center gap-3 px-5 py-4 md:border-r border-[#d4af37]/20 flex-1">
-                <FiCalendar className="text-[#d4af37] text-xl shrink-0" />
+              <div className="flex items-center gap-3 px-5 py-4 md:border-r border-[#E5B664]/20 flex-1">
+                <FiCalendar className="text-[#E5B664] text-xl shrink-0" />
                 <input
                   type="date"
                   className="w-full bg-transparent outline-none text-white text-base [color-scheme:dark]"
@@ -108,7 +97,7 @@ export default function HeroSection() {
       {/* Bottom Right - SCAN TO BOOK VVIP */}
       <div className="absolute bottom-6 right-4 sm:right-8 z-20">
         <div
-          className="flex items-center gap-3 bg-[#0a0a0a]/90 backdrop-blur-sm border border-[#d4af37]/50 rounded-lg px-4 py-3 shadow-xl"
+          className="flex items-center gap-3 bg-[#0a0a0a]/90 backdrop-blur-sm border border-[#E5B664]/50 rounded-lg px-4 py-3 shadow-xl"
         >
           <div className="w-14 h-14 bg-white p-1 rounded shrink-0">
             <Image
@@ -120,7 +109,7 @@ export default function HeroSection() {
             />
           </div>
           <div className="leading-tight">
-            <p className="text-[#d4af37] text-xs font-bold tracking-widest uppercase">Scan To Book</p>
+            <p className="text-[#E5B664] text-xs font-bold tracking-widest uppercase">Scan To Book</p>
             <p className="text-white text-lg font-bold tracking-wide">VVIP</p>
             <p className="text-white/50 text-[10px] mt-0.5">Instant reservation</p>
           </div>

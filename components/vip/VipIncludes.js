@@ -19,13 +19,13 @@ export default function VipIncludes() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left - includes list */}
           <div>
-            <h2 className="text-[#d4af37] text-sm font-semibold tracking-[0.3em] uppercase mb-6">
+            <h2 className="text-[#E5B664] text-sm font-semibold tracking-[0.3em] uppercase mb-6">
               Your VIP Includes
             </h2>
             <ul className="space-y-4">
               {includes.map((item, idx) => (
                 <li key={idx} className="flex items-center gap-4">
-                  <span className="w-7 h-7 flex items-center justify-center rounded-full bg-[#d4af37]/15 border border-[#d4af37]/40 text-[#d4af37] shrink-0">
+                  <span className="w-7 h-7 flex items-center justify-center rounded-full bg-[#E5B664]/15 border border-[#E5B664]/40 text-[#E5B664] shrink-0">
                     <FaCheck size={12} />
                   </span>
                   <span className="text-white/85 text-base sm:text-lg">{item}</span>
@@ -38,7 +38,7 @@ export default function VipIncludes() {
           <div
             className="flex flex-col items-center"
           >
-            <div className="relative w-full max-w-md rounded-lg overflow-hidden border border-[#d4af37]/30">
+            <div className="relative w-full max-w-md rounded-lg overflow-hidden border border-[#E5B664]/30">
               <Image
                 src="/home/bg.jpg"
                 alt="VIP Champagne Experience"
@@ -60,9 +60,9 @@ export default function VipIncludes() {
         {/* Footer tagline */}
         <div className="mt-16 text-center">
           <p className="text-white/50 text-xs sm:text-sm tracking-[0.25em] uppercase">
-            The Pearl Bar Club Event <span className="text-[#d4af37]">•</span> VIP Services{" "}
-            <span className="text-[#d4af37]">•</span> 5★ Experience{" "}
-            <span className="text-[#d4af37]">•</span> Black &amp; Gold Luxury
+            The Pearl Bar Club Event <span className="text-[#E5B664]">•</span> VIP Services{" "}
+            <span className="text-[#E5B664]">•</span> 5★ Experience{" "}
+            <span className="text-[#E5B664]">•</span> Black &amp; Gold Luxury
           </p>
         </div>
       </div>

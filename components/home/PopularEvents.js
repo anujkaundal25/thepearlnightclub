@@ -50,7 +50,7 @@ export default function PopularEvents() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white">Our Most Popular Events</h2>
           <p className="text-gray-400 mt-2 text-lg">Hurry up! Unleash the Night</p>
-          <div className="w-16 h-[3px] bg-[#d4af37] mt-3"></div>
+          <div className="w-16 h-[3px] bg-[#E5B664] mt-3"></div>
         </motion.div>
 
         <Swiper
@@ -85,7 +85,7 @@ export default function PopularEvents() {
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent group-hover:from-black/95">
                   <h3 className="text-white text-lg font-bold">{item.title}</h3>
-                  <p className="text-[#d4af37] text-sm mt-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <p className="text-[#E5B664] text-sm mt-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     {item.count} Events
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export default function PopularEvents() {
               key={index}
               onClick={() => swiperRef.current.slideTo(index)}
               className={`h-3 w-3 rounded-full transition-all duration-300 ${
-                activeIndex === index ? "bg-[#d4af37] scale-110 shadow-md" : "bg-gray-600 hover:bg-gray-500"
+                activeIndex === index ? "bg-[#E5B664] scale-110 shadow-md" : "bg-gray-600 hover:bg-gray-500"
               }`}
             ></button>
           ))}

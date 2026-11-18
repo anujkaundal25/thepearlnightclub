@@ -68,8 +68,8 @@ export default function ContactForm() {
     <section className="py-16 px-4 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* LEFT – BOOK YOUR RESERVATION */}
-        <div className="bg-[#0d0d0d] border border-[#d4af37]/30 rounded-lg p-8 gold-frame">
-          <h2 className="text-center text-[#d4af37] text-xl sm:text-2xl font-bold tracking-[0.15em] uppercase mb-8 font-serif">
+        <div className="bg-[#0d0d0d] border border-[#E5B664]/30 rounded-lg p-8 gold-frame">
+          <h2 className="text-center text-[#E5B664] text-xl sm:text-2xl font-bold tracking-[0.15em] uppercase mb-8 font-serif">
             Book Your Reservation
           </h2>
 
@@ -98,7 +98,7 @@ export default function ContactForm() {
                   onChange={handleChange}
                   className="pearl-input w-full px-4 py-3 rounded-md pr-12 [color-scheme:dark]"
                 />
-                <FaCalendarAlt className="absolute right-4 top-1/2 -translate-y-1/2 text-[#d4af37] pointer-events-none" />
+                <FaCalendarAlt className="absolute right-4 top-1/2 -translate-y-1/2 text-[#E5B664] pointer-events-none" />
               </div>
             </div>
 
@@ -133,7 +133,7 @@ export default function ContactForm() {
                   placeholder="e.g. 4 guests"
                   className="pearl-input w-full px-4 py-3 rounded-md pr-12"
                 />
-                <FaUsers className="absolute right-4 top-1/2 -translate-y-1/2 text-[#d4af37] pointer-events-none" />
+                <FaUsers className="absolute right-4 top-1/2 -translate-y-1/2 text-[#E5B664] pointer-events-none" />
               </div>
             </div>
 
@@ -152,21 +152,21 @@ export default function ContactForm() {
               <p className="text-green-400 text-center font-medium">Reservation request sent successfully!</p>
             )}
             {success === false && (
-              <p className="text-[#d4af37] text-center font-medium">Something went wrong. Please try again.</p>
+              <p className="text-[#E5B664] text-center font-medium">Something went wrong. Please try again.</p>
             )}
           </form>
         </div>
 
         {/* RIGHT – CONTACT INFO */}
-        <div className="bg-[#0d0d0d] border border-[#d4af37]/30 rounded-lg p-8 gold-frame">
-          <h2 className="text-center text-[#d4af37] text-xl sm:text-2xl font-bold tracking-[0.15em] uppercase mb-8 font-serif">
+        <div className="bg-[#0d0d0d] border border-[#E5B664]/30 rounded-lg p-8 gold-frame">
+          <h2 className="text-center text-[#E5B664] text-xl sm:text-2xl font-bold tracking-[0.15em] uppercase mb-8 font-serif">
             Contact Info
           </h2>
 
           <ul className="space-y-5">
             {contactInfo.map((item, idx) => (
               <li key={idx} className="flex items-center gap-4">
-                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-[#d4af37]/10 border border-[#d4af37]/30 text-[#d4af37] shrink-0">
+                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-[#E5B664]/10 border border-[#E5B664]/30 text-[#E5B664] shrink-0">
                   {item.icon}
                 </span>
                 <div className="leading-tight">
@@ -178,7 +178,7 @@ export default function ContactForm() {
           </ul>
 
           {/* QR Code Box */}
-          <div className="mt-8 border border-[#d4af37]/40 rounded-lg p-6 text-center bg-[#111111]/50">
+          <div className="mt-8 border border-[#E5B664]/40 rounded-lg p-6 text-center bg-[#111111]/50">
             <div className="w-28 h-28 mx-auto bg-white p-2 rounded mb-4">
               <Image
                 src="/qrcode.webp"
@@ -188,7 +188,7 @@ export default function ContactForm() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <p className="text-[#d4af37] font-bold text-base tracking-wide">Scan To Book</p>
+            <p className="text-[#E5B664] font-bold text-base tracking-wide">Scan To Book</p>
             <p className="text-white/60 text-sm mt-1">Scan for instant booking</p>
           </div>
         </div>

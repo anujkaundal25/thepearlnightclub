@@ -5,10 +5,10 @@ export default function VipHero() {
       <div className="absolute inset-0">
         <div
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/home/about.jpg')` }}
+          style={{ backgroundImage: `url('/hero-section/reserver-hero-bg.jpeg')` }}
         />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/20" />
       </div>
 
       {/* Content */}
@@ -18,7 +18,7 @@ export default function VipHero() {
             VIP <span className="text-white/60 font-light italic">- Your Night Your Way</span>
           </h1>
           <p className="text-white/85 text-lg sm:text-xl mt-5 font-light tracking-wide">
-            For Anyone <span className="text-[#d4af37]">•</span> Your Night To Remember
+            For Anyone <span className="text-[#E5B664]">•</span> Your Night To Remember
           </p>
         </div>
       </div>

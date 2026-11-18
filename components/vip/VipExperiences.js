@@ -21,7 +21,7 @@ export default function VipExperiences() {
     <section className="py-20 px-4 bg-[#0a0a0a]">
       <div className="max-w-5xl mx-auto">
         <h2
-          className="text-center text-[#d4af37] text-sm sm:text-base font-semibold tracking-[0.3em] uppercase mb-12"
+          className="text-center text-[#E5B664] text-sm sm:text-base font-semibold tracking-[0.3em] uppercase mb-12"
         >
           Tailored VIP Experiences
         </h2>
@@ -30,7 +30,7 @@ export default function VipExperiences() {
           {experiences.map((exp, idx) => (
             <div
               key={idx}
-              className="bg-gradient-to-br from-[#d4af37] to-[#b8860b] rounded-lg p-6 text-center text-black shadow-lg hover:shadow-[0_10px_30px_rgba(212,175,55,0.4)] transition-all duration-300 hover:-translate-y-1"
+              className="bg-gradient-to-br from-[#E5B664] to-[#b8860b] rounded-lg p-6 text-center text-black shadow-lg hover:shadow-[0_10px_30px_rgba(212,175,55,0.4)] transition-all duration-300 hover:-translate-y-1"
             >
               <div className="mb-3 flex justify-center">{exp.icon}</div>
               <h3 className="text-lg font-semibold tracking-wide">{exp.title}</h3>

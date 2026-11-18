@@ -133,11 +133,11 @@
 :root {
   --pearl-black: #0a0a0a;
   --pearl-black-soft: #111111;
-  --pearl-gold: #d4af37;
+  --pearl-gold: #E5B664;
   --pearl-gold-light: #e8c547;
   --pearl-gold-dark: #b8860b;
-  --pearl-gold-gradient: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #f4e5b0 100%);
-  --pearl-gold-text: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #e8c547 100%);
+  --pearl-gold-gradient: linear-gradient(135deg, #b8860b 0%, #E5B664 50%, #f4e5b0 100%);
+  --pearl-gold-text: linear-gradient(135deg, #b8860b 0%, #E5B664 50%, #e8c547 100%);
 }
 
 html {
@@ -146,7 +146,7 @@ html {
 
 /* Gold text gradient */
 .gold-text {
-  background: linear-gradient(135deg, #b8860b 0%, #d4af37 40%, #f4e5b0 60%, #d4af37 100%);
+  background: linear-gradient(135deg, #b8860b 0%, #E5B664 40%, #f4e5b0 60%, #E5B664 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -154,7 +154,7 @@ html {
 
 /* Gold button */
 .btn-gold {
-  background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #e8c547 100%);
+  background: linear-gradient(135deg, #b8860b 0%, #E5B664 50%, #e8c547 100%);
   color: #0a0a0a;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -162,7 +162,7 @@ html {
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
 }
 .btn-gold:hover {
-  background: linear-gradient(135deg, #e8c547 0%, #d4af37 50%, #b8860b 100%);
+  background: linear-gradient(135deg, #e8c547 0%, #E5B664 50%, #b8860b 100%);
   box-shadow: 0 6px 30px rgba(212, 175, 55, 0.45);
   transform: translateY(-1px);
 }

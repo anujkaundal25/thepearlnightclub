@@ -21,8 +21,8 @@ export default function AboutSection() {
           <div>
             {/* Gold Line */}
             <div className="flex items-center gap-4 mb-4">
-              <span className="w-16 h-[3px] bg-[#d4af37]"></span>
-              <p className="text-[#d4af37] font-semibold tracking-wider uppercase text-md">
+              <span className="w-16 h-[3px] bg-[#E5B664]"></span>
+              <p className="text-[#E5B664] font-semibold tracking-wider uppercase text-md">
                 Know About Us
               </p>
             </div>
@@ -47,8 +47,8 @@ export default function AboutSection() {
             {/* Button */}
             <Link
               href="/about"
-              className="inline-block px-8 py-3 border-2 border-[#d4af37] 
-              text-[#d4af37] hover:bg-[#d4af37] hover:text-black 
+              className="inline-block px-8 py-3 border-2 border-[#E5B664] 
+              text-[#E5B664] hover:bg-[#E5B664] hover:text-black 
               font-bold rounded-md transition duration-300"
             >
               Know More

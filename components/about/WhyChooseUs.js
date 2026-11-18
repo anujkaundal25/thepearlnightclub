@@ -34,12 +34,12 @@ export default function WhyChooseUs() {
           Why Choose Us
         </h2>
 
-        <p className="text-[#d4af37] text-lg mt-3">
+        <p className="text-[#E5B664] text-lg mt-3">
           Our Next Bar Event Awaits
         </p>
 
         <div className="flex justify-center mt-4">
-          <span className="w-16 h-1 bg-[#d4af37] rounded-full"></span>
+          <span className="w-16 h-1 bg-[#E5B664] rounded-full"></span>
         </div>
 
         {/* Features Grid */}
@@ -51,8 +51,8 @@ export default function WhyChooseUs() {
                 key={index}
                 className="flex flex-col items-center text-center group"
               >
-                <div className="w-40 h-40 rounded-full bg-[#111111] border border-[#d4af37]/20 flex items-center justify-center mb-8 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:border-[#d4af37]/60">
-                  <Icon size={56} strokeWidth={1.4} className="text-[#d4af37]" />
+                <div className="w-40 h-40 rounded-full bg-[#111111] border border-[#E5B664]/20 flex items-center justify-center mb-8 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:border-[#E5B664]/60">
+                  <Icon size={56} strokeWidth={1.4} className="text-[#E5B664]" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
                 <p className="text-gray-400 text-md md:text-[17px] leading-relaxed max-w-[280px] px-4">

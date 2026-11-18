@@ -30,8 +30,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full sticky top-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-md border-b border-[#d4af37]/15">
-      <div className="py-3 sm:py-4">
+    <nav className="w-full sticky top-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-md border-b border-[#E5B664]/15">
+      <div className="py-4 sm:py-5">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between gap-4">
 
@@ -39,21 +39,13 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-3 shrink-0">
               <div className="relative">
                 <Image
-                  src="/logo-pearl.png"
+                  src="/logo.jpg"
                   alt="The Pearl Logo"
-                  width={56}
-                  height={56}
+                  width={108}
+                  height={108}
                   className="object-contain"
-                  style={{ filter: "drop-shadow(0 0 8px rgba(212,175,55,0.4))" }}
+                  style={{ filter: "drop-shadow(0 0 6px rgba(212,175,55,0.6))" }}
                 />
-              </div>
-              <div className="hidden sm:flex flex-col leading-none">
-                <span className="text-[#d4af37] text-xl sm:text-2xl font-bold tracking-wide font-serif">
-                  THE PEARL
-                </span>
-                <span className="text-white/70 text-[10px] sm:text-xs tracking-[0.25em] uppercase">
-                  Bar | Club | Event
-                </span>
               </div>
             </Link>
 
@@ -65,13 +57,13 @@ export default function Navbar() {
                   href={item.href}
                   className={`relative font-medium text-sm tracking-wide uppercase transition-colors duration-300 pb-1 ${
                     isActive(item.href)
-                      ? "text-[#d4af37]"
-                      : "text-white/80 hover:text-[#d4af37]"
+                      ? "text-[#E5B664]"
+                      : "text-white/80 hover:text-[#E5B664]"
                   }`}
                 >
                   {item.label}
                   {isActive(item.href) && (
-                    <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#d4af37] rounded-full" />
+                    <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#E5B664] rounded-full" />
                   )}
                 </Link>
               ))}
@@ -81,13 +73,13 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-3 shrink-0">
               <Link
                 href="/reserve"
-                className="px-5 py-2 border border-[#d4af37]/60 text-[#d4af37] text-sm font-semibold tracking-wide uppercase rounded hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+                className="px-5 py-2 border border-[#E5B664]/60 text-[#E5B664] text-sm font-semibold tracking-wide uppercase rounded hover:bg-[#E5B664] hover:text-black transition-all duration-300"
               >
                 Reserve
               </Link>
               <Link
                 href="/login"
-                className="px-5 py-2 text-white/80 text-sm font-semibold tracking-wide uppercase border border-white/20 rounded hover:border-[#d4af37] hover:text-[#d4af37] transition-all duration-300"
+                className="px-5 py-2 text-white/80 text-sm font-semibold tracking-wide uppercase border border-white/20 rounded hover:border-[#E5B664] hover:text-[#E5B664] transition-all duration-300"
               >
                 Login
               </Link>
@@ -96,7 +88,7 @@ export default function Navbar() {
             {/* MOBILE MENU BUTTON */}
             <div className="lg:hidden">
               <button
-                className="text-[#d4af37] p-1"
+                className="text-[#E5B664] p-1"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
               >
@@ -110,7 +102,7 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {isOpen && (
         <div
-          className="lg:hidden bg-[#0a0a0a] border-t border-[#d4af37]/15"
+          className="lg:hidden bg-[#0a0a0a] border-t border-[#E5B664]/15"
         >
             <div className="px-4 py-6 space-y-1">
               {navItems.map((item) => (
@@ -120,8 +112,8 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={`block py-3 px-3 rounded text-base font-medium tracking-wide uppercase transition-colors ${
                     isActive(item.href)
-                      ? "text-[#d4af37] bg-[#d4af37]/10"
-                      : "text-white/80 hover:text-[#d4af37] hover:bg-white/5"
+                      ? "text-[#E5B664] bg-[#E5B664]/10"
+                      : "text-white/80 hover:text-[#E5B664] hover:bg-white/5"
                   }`}
                 >
                   {item.label}
@@ -132,7 +124,7 @@ export default function Navbar() {
                 <Link
                   href="/reserve"
                   onClick={() => setIsOpen(false)}
-                  className="w-full text-center px-5 py-3 border border-[#d4af37]/60 text-[#d4af37] text-sm font-semibold tracking-wide uppercase rounded"
+                  className="w-full text-center px-5 py-3 border border-[#E5B664]/60 text-[#E5B664] text-sm font-semibold tracking-wide uppercase rounded"
                 >
                   Reserve
                 </Link>

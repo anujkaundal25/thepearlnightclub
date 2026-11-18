@@ -40,7 +40,7 @@ export default function OverseasEvents() {
       <div className="max-w-7xl mx-auto">
         {/* Featured heading */}
         <h2
-          className="text-center text-[#d4af37] text-sm sm:text-base font-semibold tracking-[0.3em] uppercase mb-10"
+          className="text-center text-[#E5B664] text-sm sm:text-base font-semibold tracking-[0.3em] uppercase mb-10"
         >
           Featured Overseas Events
         </h2>
@@ -50,7 +50,7 @@ export default function OverseasEvents() {
           {featured.map((event, idx) => (
             <div
               key={idx}
-              className="bg-[#111111] border border-[#d4af37]/40 rounded-lg overflow-hidden card-lift"
+              className="bg-[#111111] border border-[#E5B664]/40 rounded-lg overflow-hidden card-lift"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -62,7 +62,7 @@ export default function OverseasEvents() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent" />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-[#d4af37] text-2xl font-serif font-semibold mb-3">
+                <h3 className="text-[#E5B664] text-2xl font-serif font-semibold mb-3">
                   {event.title}
                 </h3>
                 <p className="text-white/75 text-sm leading-relaxed">
@@ -75,7 +75,7 @@ export default function OverseasEvents() {
 
         {/* More destinations */}
         <h2
-          className="text-center text-[#d4af37] text-sm sm:text-base font-semibold tracking-[0.3em] uppercase mt-16 mb-10"
+          className="text-center text-[#E5B664] text-sm sm:text-base font-semibold tracking-[0.3em] uppercase mt-16 mb-10"
         >
           Plus More Destinations
         </h2>
@@ -84,7 +84,7 @@ export default function OverseasEvents() {
           {more.map((event, idx) => (
             <div
               key={idx}
-              className="bg-[#111111] border border-[#d4af37]/40 rounded-lg overflow-hidden card-lift"
+              className="bg-[#111111] border border-[#E5B664]/40 rounded-lg overflow-hidden card-lift"
             >
               <div className="relative h-44 overflow-hidden">
                 <Image
@@ -96,7 +96,7 @@ export default function OverseasEvents() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent" />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-[#d4af37] text-2xl font-serif font-semibold mb-2">
+                <h3 className="text-[#E5B664] text-2xl font-serif font-semibold mb-2">
                   {event.title}
                 </h3>
                 <p className="text-white/75 text-sm leading-relaxed">

@@ -47,10 +47,10 @@ export default function UpcomingEvents() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="bg-[#111111] border border-[#d4af37]/30 p-6 rounded-lg hover:border-[#d4af37] transition group card-lift"
+              className="bg-[#111111] border border-[#E5B664]/30 p-6 rounded-lg hover:border-[#E5B664] transition group card-lift"
             >
-              <p className="text-[#d4af37] font-bold text-sm mb-2">{event.date}</p>
-              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#d4af37] transition">
+              <p className="text-[#E5B664] font-bold text-sm mb-2">{event.date}</p>
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#E5B664] transition">
                 {event.title}
               </h3>
               <p className="text-gray-400 mb-4">{event.category}</p>

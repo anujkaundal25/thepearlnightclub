@@ -25,7 +25,7 @@ export default function GallerySection() {
           {photos.map((photo, index) => (
             <div
               key={index}
-              className="cursor-pointer overflow-hidden rounded-lg border border-[#d4af37]/25 bg-[#111111] card-lift group"
+              className="cursor-pointer overflow-hidden rounded-lg border border-[#E5B664]/25 bg-[#111111] card-lift group"
               onClick={() => setActiveIndex(index)}
             >
               <div className="relative h-64 overflow-hidden">
@@ -38,7 +38,7 @@ export default function GallerySection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               </div>
               <div className="p-5 text-center">
-                <h3 className="text-[#d4af37] text-lg font-semibold font-serif">
+                <h3 className="text-[#E5B664] text-lg font-semibold font-serif">
                   {photo.title}
                 </h3>
               </div>

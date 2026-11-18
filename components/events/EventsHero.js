@@ -7,9 +7,9 @@ export default function EventsHero() {
       <div className="absolute inset-0">
         <div
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/events/beach.jpg')` }}
+          style={{ backgroundImage: `url('/hero-section/event-hero-bg.jpeg')` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-black/40 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-black/25 to-black/15" />
       </div>
 
       {/* Content */}

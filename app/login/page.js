@@ -23,7 +23,7 @@ export default function LoginPage() {
         transition={{ duration: 0.7 }}
         className="relative z-10 w-full max-w-md"
       >
-        <div className="bg-[#111111] border border-[#d4af37]/30 rounded-lg p-8 shadow-2xl">
+        <div className="bg-[#111111] border border-[#E5B664]/30 rounded-lg p-8 shadow-2xl">
           <div className="text-center mb-8">
             <h1 className="font-serif text-3xl font-bold gold-text">Welcome Back</h1>
             <p className="text-white/60 text-sm mt-2">Login to your The Pearl account</p>
@@ -60,7 +60,7 @@ export default function LoginPage() {
 
           <p className="text-center text-white/50 text-sm mt-6">
             Don&apos;t have an account?{" "}
-            <a href="/contact" className="text-[#d4af37] hover:underline">Contact us</a>
+            <a href="/contact" className="text-[#E5B664] hover:underline">Contact us</a>
           </p>
         </div>
       </motion.div>
