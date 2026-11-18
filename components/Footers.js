@@ -15,9 +15,9 @@ export default function Footers() {
           <div>
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
-                src="/logo.jpg"
+                src="/new-logo.png"
                 alt="The Pearl Logo"
-                width={72}
+                width={150}
                 height={72}
                 className="object-contain"
                 style={{ filter: "drop-shadow(0 0 6px rgba(212,175,55,0.6))" }}

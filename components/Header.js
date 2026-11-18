@@ -39,9 +39,9 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-3 shrink-0">
               <div className="relative">
                 <Image
-                  src="/logo.jpg"
+                  src="/new-logo.png"
                   alt="The Pearl Logo"
-                  width={108}
+                  width={150}
                   height={108}
                   className="object-contain"
                   style={{ filter: "drop-shadow(0 0 6px rgba(212,175,55,0.6))" }}

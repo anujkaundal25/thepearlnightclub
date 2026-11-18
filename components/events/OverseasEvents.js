@@ -7,17 +7,17 @@ const featured = [
   {
     title: "Ibiza Beach Party",
     desc: "Sunset fiestas • VIP beach club • Live DJ • July - August",
-    image: "/events/beach.jpg",
+    image: "/events/event1.webp",
   },
   {
     title: "Mykonos Nights",
     desc: "White isle parties • Rooftop cocktails • Celebrity guest nights • June - September",
-    image: "/events/cocktail.jpg",
+    image: "/events/event2.webp",
   },
   {
     title: "Dubai Luxury Nights",
     desc: "Skyline rooftop events • Desert glam nights • Luxury yacht parties • October - March",
-    image: "/events/dj-night.jpg",
+    image: "/events/event3.webp",
   },
 ];
 
@@ -25,12 +25,13 @@ const more = [
   {
     title: "Paris",
     desc: "Paris Fashion Week Afterparties • Seine River Gala • Spring 2024",
-    image: "/events/live-music.jpg",
+    image: "/events/event4.webp",
+    position: "top",
   },
   {
     title: "London",
     desc: "London Rooftop Soirées • Mayfair Club Nights • Winter 2024",
-    image: "/events/bands.jpg",
+    image: "/events/event5.webp",
   },
 ];
 
@@ -92,6 +93,7 @@ export default function OverseasEvents() {
                   alt={event.title}
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-700"
+                  style={{ objectPosition: event.position || "center" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent" />
               </div>

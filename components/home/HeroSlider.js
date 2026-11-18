@@ -21,9 +21,9 @@ export default function HeroSection() {
         {/* Center Logo */}
         <div className="mb-6">
           <Image
-            src="/logo.jpg"
+            src="/new-logo.png"
             alt="The Pearl Gold Shell Logo"
-            width={220}
+            width={300}
             height={220}
             className="object-contain mx-auto"
             style={{ filter: "drop-shadow(0 0 12px rgba(212,175,55,0.5))" }}

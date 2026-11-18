@@ -1,56 +1,55 @@
 import Link from "next/link";
-import { FaMusic, FaMicrophone, FaStar } from "react-icons/fa";
 
 const nights = [
   {
     title: "Friday Nights",
     desc: "Resident DJs • Doors 9PM\nDress Code: Evening Wear",
-    icon: FaMusic,
+    img: "/new-icon.png",
   },
   {
     title: "Saturday Nights",
     desc: "Guest DJs • Live Music • Doors 9PM\n• VIP Access",
-    icon: FaMicrophone,
+    img: "/new-icon.png",
   },
   {
     title: "Special Guest Nights",
     desc: "Celebrity Performances • Bottle Service\n• Exclusive Events",
-    icon: FaStar,
+    img: "/new-icon.png",
   },
 ];
 
 export default function ClubNights() {
   return (
     <section className="py-20 px-4 bg-[#0a0a0a]">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {nights.map((night, idx) => (
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {nights.map((night) => (
             <div
-              key={idx}
-              className="relative bg-[#0d0d0d] border border-[#E5B664]/30 rounded-lg p-8 text-center card-lift"
+              key={night.title}
+              className="relative flex aspect-[1.65] min-h-[190px] flex-col items-center justify-center overflow-hidden border border-[#bca66c]/70 bg-[#090909] px-5 py-6 text-center card-lift"
               style={{
-                boxShadow: "inset 0 0 30px rgba(212,175,55,0.05)",
+                boxShadow: "inset 0 0 28px rgba(212,175,55,0.04)",
               }}
             >
-              {/* Corner decorations */}
-              <span className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-[#E5B664] rounded-tl" />
-              <span className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-[#E5B664] rounded-tr" />
-              <span className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-[#E5B664] rounded-bl" />
-              <span className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-[#E5B664] rounded-br" />
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-[5px] border border-[#bca66c]/35"
+              />
+              <span aria-hidden="true" className="pointer-events-none absolute left-[8px] top-[8px] h-4 w-4 rounded-tl-md border-l border-t border-[#d7c18a]/80" />
+              <span aria-hidden="true" className="pointer-events-none absolute right-[8px] top-[8px] h-4 w-4 rounded-tr-md border-r border-t border-[#d7c18a]/80" />
+              <span aria-hidden="true" className="pointer-events-none absolute bottom-[8px] left-[8px] h-4 w-4 rounded-bl-md border-b border-l border-[#d7c18a]/80" />
+              <span aria-hidden="true" className="pointer-events-none absolute bottom-[8px] right-[8px] h-4 w-4 rounded-br-md border-b border-r border-[#d7c18a]/80" />
 
-              {/* Icon */}
-              <div className="mb-6 flex justify-center">
-                <night.icon
-                  size={44}
-                  className="text-[#E5B664]"
-                  style={{ filter: "drop-shadow(0 0 8px rgba(212,175,55,0.4))" }}
-                />
-              </div>
-
-              <h3 className="text-[#E5B664] text-2xl sm:text-3xl font-serif font-semibold mb-4">
+              <img
+                src={night.img}
+                alt=""
+                aria-hidden="true"
+                className="relative z-10 h-20 w-20 object-contain"
+              />
+              <h3 className="relative z-10 mb-2 font-serif text-xl font-semibold tracking-wide text-[#e8d39e]">
                 {night.title}
               </h3>
-              <p className="text-white/75 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+              <p className="relative z-10 whitespace-pre-line text-xs leading-5 text-white/80 sm:text-[13px]">
                 {night.desc}
               </p>
             </div>

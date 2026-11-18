@@ -11,8 +11,8 @@ export const metadata = {
   description:
     "Join us for exclusive cocktails, live entertainment, and unforgettable nights at The Pearl.",
     icons: {
-    icon: "/favicon.jpg",
-    shortcut: "/favicon.jpg",
+    icon: "/new-fav-icon.png",
+    shortcut: "/new-fav-icon.png",
   },
 };
 

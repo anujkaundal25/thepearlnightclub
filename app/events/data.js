@@ -66,7 +66,7 @@ export const eventsData = [
     hero: {
       title: "Beach Parties",
       subtitle: "Sunset beats and beachside celebrations",
-      image: "/events/beach.jpg",
+      // image: "/events/beach.jpg",
     },
     about: {
         title:"Escape to The Pearl’s Unforgettable Beach Parties!",

@@ -29,7 +29,7 @@ export default function ScrollToTop() {
       onClick={scrollToTop}
       className="fixed bottom-6 right-6 z-50
       h-12 w-12 flex items-center justify-center
-      bg-[#e86c60] hover:bg-[#d75a4f]
+      bg-[#bc8c11] hover:bg-[#a8790f]
       text-white rounded-md
       shadow-lg transition-all duration-300"
       aria-label="Scroll to top"
