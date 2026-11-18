@@ -56,10 +56,15 @@ export default function ContactForm() {
 
   const contactInfo = [
     { icon: <FaWhatsapp />, label: "WhatsApp", value: "61 410 036 729" },
-    { icon: <FaInstagram />, label: "Instagram", value: "@thepearlbarclub" },
-    { icon: <FaFacebookF />, label: "Facebook", value: "/thepearlbarclub" },
+    { icon: <FaInstagram />, label: "Instagram", value: "@thepearlbarclub", href: "#" },
+    { icon: <FaFacebookF />, label: "Facebook", value: "/thepearlbarclub", href: "#" },
     { icon: <FaEnvelope />, label: "Email", value: "thepearl149@hotmail.com" },
-    { icon: <FaGlobe />, label: "Website", value: "www.thepearlbarclub.com" },
+    {
+      icon: <FaGlobe />,
+      label: "Website",
+      value: "https://thepearlnightclub.com/",
+      href: "https://thepearlnightclub.com/",
+    },
     { icon: <FaMapMarkerAlt />, label: "Location", value: "777 Ocean Drive, Miami, FL 33139" },
     { icon: <FaClock />, label: "Opening Hours", value: "Thu–Sat • 8PM – 3AM" },
   ];
@@ -171,7 +176,16 @@ export default function ContactForm() {
                 </span>
                 <div className="leading-tight">
                   <span className="text-white/50 text-xs uppercase tracking-wider">{item.label}:</span>
-                  <p className="text-white/90 text-sm sm:text-base">{item.value}</p>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className="text-white/90 text-sm sm:text-base hover:text-[#E5B664] hover:underline underline-offset-4"
+                    ><br/>
+                      {item.value}
+                    </a>
+                  ) : (
+                    <p className="text-white/90 text-sm sm:text-base">{item.value}</p>
+                  )}
                 </div>
               </li>
             ))}
