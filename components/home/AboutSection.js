@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function AboutSection() {
@@ -54,7 +53,7 @@ export default function AboutSection() {
             >
               Know More
             </Link>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
