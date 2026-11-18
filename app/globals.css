@@ -120,6 +120,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+  :where(a, button, [role="button"], [class*="hover:"]) {
+    transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: "Jost", "Geist", sans-serif;
@@ -150,6 +155,12 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.vip-experience-card {
+  background:
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.18) 0%, transparent 68%),
+    linear-gradient(110deg, #f3d37e 0%, #e6b548 52%, #c08c13 100%);
 }
 
 /* Gold button */
@@ -223,11 +234,6 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--pearl-gold-light);
-}
-
-/* Smooth transitions */
-* {
-  @apply transition-colors;
 }
 
 /* Gold glow text */
