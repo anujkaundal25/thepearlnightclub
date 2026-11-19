@@ -4,68 +4,58 @@ import { MdCategory } from "react-icons/md";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-[90vh] overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
+    <section className="relative isolate w-full min-h-[90svh] overflow-hidden bg-[#0a0a0a]">
+      <div aria-hidden="true" className="absolute inset-0">
         <div
-          className="w-full h-full bg-cover bg-center scale-105"
+          className="h-full w-full bg-cover bg-center"
           style={{ backgroundImage: `url('/hero-section/home-hero-bg.jpeg')` }}
         />
-        {/* Gold confetti / dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/25 to-black/65" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.35)_100%)]" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 min-h-[90vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-10 pb-28">
-        {/* Center Logo */}
-        <div className="mb-6">
+      <div className="relative z-10 flex min-h-[90svh] flex-col items-center justify-center px-4 py-12 text-center sm:px-6">
+        <div className="mb-3 sm:mb-5">
           <Image
             src="/new-logo.png"
             alt="The Pearl Gold Shell Logo"
-            width={300}
+            width={350}
             height={220}
-            className="object-contain mx-auto"
+            className="mx-auto h-auto w-[min(58vw,220px)] object-contain sm:w-[240px]"
             style={{ filter: "drop-shadow(0 0 12px rgba(212,175,55,0.5))" }}
             priority
           />
         </div>
 
-        {/* Headline */}
         <h1
-          className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mt-6 font-serif"
+          className="mt-1 max-w-5xl font-serif text-3xl font-bold leading-tight text-[#eed6af] sm:text-4xl lg:text-6xl"
+          style={{ textShadow: "0 2px 5px rgba(0,0,0,0.95), 0 0 18px rgba(0,0,0,0.9)" }}
         >
           Join Us For An Exclusive Night
         </h1>
 
-        {/* Subtitle */}
         <p
-          className="text-base sm:text-lg md:text-xl text-white/80 font-light mt-5 max-w-3xl leading-relaxed"
+          className="mt-4 max-w-2xl text-base font-medium leading-relaxed text-white sm:text-xl"
+          style={{ textShadow: "0 2px 5px rgba(0,0,0,0.95), 0 0 16px rgba(0,0,0,0.9)" }}
         >
           Experience luxury nightlife, curated cocktails, live DJ events, and unforgettable evenings
           at the city&apos;s most exclusive venue.
         </p>
 
-        {/* Search Bar */}
-        <div
-          className="w-full max-w-5xl mt-10 px-2"
-        >
-          <div className="bg-[#111111]/90 backdrop-blur-md rounded-md shadow-2xl overflow-hidden border border-[#E5B664]/40 gold-frame">
-            <div className="flex flex-col md:flex-row items-stretch">
-              {/* Input Field */}
-              <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#E5B664]/20 flex-1">
+        <div className="mt-7 w-full max-w-5xl sm:mt-9">
+          <div className="overflow-hidden rounded-xl border border-[#E5B664]/60 bg-[#111111]/95 shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-md">
+            <div className="flex flex-col items-stretch md:flex-row">
+              <div className="flex min-w-0 flex-1 items-center gap-3 border-b border-[#E5B664]/25 px-4 py-4 sm:px-5 md:border-b-0 md:border-r">
                 <FiSearch className="text-[#E5B664] text-xl shrink-0" />
                 <input
                   type="text"
                   placeholder="Enter name"
-                  className="w-full bg-transparent outline-none text-white placeholder-white/40 text-base"
+                  aria-label="Search by name"
+                  className="w-full min-w-0 bg-transparent text-base text-white outline-none placeholder:text-white/60"
                 />
               </div>
 
-              {/* Category Select */}
-              <div className="flex items-center gap-3 px-5 py-4 border-b md:border-b-0 md:border-r border-[#E5B664]/20 flex-1 relative">
+              <div className="relative flex min-w-0 flex-1 items-center gap-3 border-b border-[#E5B664]/25 px-4 py-4 sm:px-5 md:border-b-0 md:border-r">
                 <MdCategory className="text-[#E5B664] text-xl shrink-0" />
-                <select className="w-full bg-transparent text-white text-base outline-none appearance-none cursor-pointer">
+                <select aria-label="Select event category" className="w-full min-w-0 cursor-pointer appearance-none bg-transparent text-base text-white outline-none">
                   <option className="bg-[#111]">Select Category</option>
                   <option className="bg-[#111]">Bar</option>
                   <option className="bg-[#111]">Club</option>
@@ -73,20 +63,19 @@ export default function HeroSection() {
                   <option className="bg-[#111]">VIP</option>
                   <option className="bg-[#111]">Overseas Events</option>
                 </select>
-                <FiCalendar className="text-[#E5B664] text-sm ml-auto" />
+                <span aria-hidden="true" className="ml-auto text-sm text-[#E5B664]">▾</span>
               </div>
 
-              {/* Date */}
-              <div className="flex items-center gap-3 px-5 py-4 md:border-r border-[#E5B664]/20 flex-1">
+              <div className="flex min-w-0 flex-1 items-center gap-3 border-b border-[#E5B664]/25 px-4 py-4 sm:px-5 md:border-b-0 md:border-r">
                 <FiCalendar className="text-[#E5B664] text-xl shrink-0" />
                 <input
                   type="date"
-                  className="w-full bg-transparent outline-none text-white text-base [color-scheme:dark]"
+                  aria-label="Event date"
+                  className="w-full min-w-0 bg-transparent text-base text-white outline-none [color-scheme:dark]"
                 />
               </div>
 
-              {/* Search Button */}
-              <button className="btn-gold text-base font-bold px-8 py-4 whitespace-nowrap uppercase tracking-wider">
+              <button className="btn-gold m-2 rounded-lg px-6 py-3.5 text-sm font-bold uppercase tracking-wider sm:px-8 sm:text-base">
                 Search Events
               </button>
             </div>
@@ -94,24 +83,21 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom Right - SCAN TO BOOK VVIP */}
-      <div className="absolute bottom-6 right-4 sm:right-8 z-20">
-        <div
-          className="flex items-center gap-3 bg-[#0a0a0a]/90 backdrop-blur-sm border border-[#E5B664]/50 rounded-lg px-4 py-3 shadow-xl"
-        >
-          <div className="w-14 h-14 bg-white p-1 rounded shrink-0">
+      <div className="relative z-20 mx-auto mb-5 mt-1 w-fit md:absolute md:bottom-6 md:right-8 md:mx-0 md:mb-0 md:mt-0">
+        <div className="flex items-center gap-3 rounded-lg border border-[#E5B664]/60 bg-[#0a0a0a]/95 px-3 py-2.5 shadow-xl backdrop-blur-sm sm:px-4 sm:py-3">
+          <div className="h-12 w-12 shrink-0 rounded bg-white p-1 sm:h-14 sm:w-14">
             <Image
               src="/qrcode.webp"
               alt="Scan to book VVIP"
               width={48}
               height={48}
-              className="w-full h-full object-contain"
+              className="h-full w-full object-contain"
             />
           </div>
           <div className="leading-tight">
             <p className="text-[#E5B664] text-xs font-bold tracking-widest uppercase">Scan To Book</p>
             <p className="text-white text-lg font-bold tracking-wide">VVIP</p>
-            <p className="text-white/50 text-[10px] mt-0.5">Instant reservation</p>
+            <p className="mt-0.5 text-[10px] text-white/70">Instant reservation</p>
           </div>
         </div>
       </div>
