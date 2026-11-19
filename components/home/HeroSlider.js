@@ -33,7 +33,7 @@ export default function HeroSection() {
         </h1>
 
         <p
-          className="mt-4 max-w-2xl text-base font-medium leading-relaxed text-white sm:text-xl"
+          className="mt-4 max-w-3xl text-base font-medium leading-relaxed text-white sm:text-[20px]"
           style={{ textShadow: "0 2px 5px rgba(0,0,0,0.95), 0 0 16px rgba(0,0,0,0.9)" }}
         >
           Experience luxury nightlife, curated cocktails, live DJ events, and unforgettable evenings
