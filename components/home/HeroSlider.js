@@ -13,13 +13,13 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 flex min-h-[90svh] flex-col items-center justify-center px-4 py-12 text-center sm:px-6">
-        <div className="mb-3 sm:mb-5">
+        <div className="mb-3">
           <Image
             src="/new-logo.png"
             alt="The Pearl Gold Shell Logo"
             width={350}
             height={220}
-            className="mx-auto h-auto w-[min(58vw,220px)] object-contain sm:w-[240px]"
+            className="mx-auto h-auto w-[min(58vw,220px)] object-contain sm:w-[300px]"
             style={{ filter: "drop-shadow(0 0 12px rgba(212,175,55,0.5))" }}
             priority
           />
