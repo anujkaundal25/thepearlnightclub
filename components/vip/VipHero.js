@@ -6,7 +6,7 @@ export default function VipHero() {
       eyebrow="VIP"
       title="Your Night Your Way"
       subtitle="For Anyone • Your Night To Remember"
-      image="/hero-section/vip.webp"
+      image="/hero-section/reserver-hero-bg.webp"
     />
   );
 }

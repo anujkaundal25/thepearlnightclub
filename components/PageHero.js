@@ -2,7 +2,7 @@
 
 export default function PageHero({ eyebrow, title, subtitle, image, children }) {
   return (
-    <section className="relative flex min-h-[55vh] w-full items-center justify-center overflow-hidden bg-[#0a0a0a] sm:min-h-[65vh]">
+    <section className="relative flex min-h-[65vh] w-full items-center justify-center overflow-hidden bg-[#0a0a0a] sm:min-h-[65vh]">
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-cover bg-center brightness-110 contrast-105 saturate-110"
