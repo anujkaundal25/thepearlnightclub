@@ -40,13 +40,13 @@ export default function VipIncludes() {
           >
             <div className="relative w-full max-w-md rounded-lg overflow-hidden border border-[#E5B664]/30">
               <Image
-                src="/home/bg.jpg"
+                src="/home/bg.webp"
                 alt="VIP Champagne Experience"
                 width={600}
                 height={350}
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" /> */}
             </div>
             <Link
               href="/contact"
