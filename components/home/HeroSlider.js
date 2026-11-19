@@ -41,7 +41,7 @@ export default function HeroSection() {
         </p>
 
         <div className="mt-7 w-full max-w-5xl sm:mt-9">
-          <div className="overflow-hidden rounded-xl border border-[#E5B664]/60 bg-[#111111]/95 shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-md">
+          <div className="overflow-hidden rounded-xl border border-[#E5B664]/60 bg-[#111111]/95 shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-none sm:backdrop-blur-md">
             <div className="flex flex-col items-stretch md:flex-row">
               <div className="flex min-w-0 flex-1 items-center gap-3 border-b border-[#E5B664]/25 px-4 py-4 sm:px-5 md:border-b-0 md:border-r">
                 <FiSearch className="text-[#E5B664] text-xl shrink-0" />
@@ -84,7 +84,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-20 mx-auto mb-5 mt-1 w-fit md:absolute md:bottom-6 md:right-8 md:mx-0 md:mb-0 md:mt-0">
-        <div className="flex items-center gap-3 rounded-lg border border-[#E5B664]/60 bg-[#0a0a0a]/95 px-3 py-2.5 shadow-xl backdrop-blur-sm sm:px-4 sm:py-3">
+        <div className="flex items-center gap-3 rounded-lg border border-[#E5B664]/60 bg-[#0a0a0a]/95 px-3 py-2.5 shadow-xl backdrop-blur-none sm:backdrop-blur-sm sm:px-4 sm:py-3">
           <div className="h-12 w-12 shrink-0 rounded bg-white p-1 sm:h-14 sm:w-14">
             <Image
               src="/qrcode.webp"
