@@ -84,8 +84,14 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-20 mx-auto mb-5 mt-1 w-fit md:absolute md:bottom-6 md:right-8 md:mx-0 md:mb-0 md:mt-0">
-        <div className="flex items-center gap-3 rounded-lg border border-[#E5B664]/60 bg-[#0a0a0a]/95 px-3 py-2.5 shadow-xl backdrop-blur-none sm:backdrop-blur-sm sm:px-4 sm:py-3">
-          <div className="h-12 w-12 shrink-0 rounded bg-white p-1 sm:h-14 sm:w-14">
+        <div
+          className="relative isolate flex items-center gap-3 overflow-hidden rounded-lg border border-[#E5B664]/60 bg-cover bg-center px-3 py-2.5 shadow-xl sm:px-4 sm:py-3"
+          style={{
+            backgroundImage: "url('/hero-section/vip.webp')",
+          }}
+        >
+          <div aria-hidden="true" className="absolute inset-0 z-0 bg-black/60" />
+          <div className="relative z-10 h-12 w-12 shrink-0 rounded bg-white p-1 sm:h-14 sm:w-14">
             <Image
               src="/qrcode.webp"
               alt="Scan to book VVIP"
@@ -94,7 +100,7 @@ export default function HeroSection() {
               className="h-full w-full object-contain"
             />
           </div>
-          <div className="leading-tight">
+          <div className="relative z-10 leading-tight">
             <p className="text-[#E5B664] text-xs font-bold tracking-widest uppercase">Scan To Book</p>
             <p className="text-white text-lg font-bold tracking-wide">VVIP</p>
             <p className="mt-0.5 text-[10px] text-white/70">Instant reservation</p>

@@ -5,7 +5,7 @@ export default function VipHero() {
       <div className="absolute inset-0">
         <div
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/hero-section/reserver-hero-bg.jpeg')` }}
+          style={{ backgroundImage: `url('/hero-section/vip.webp')` }}
         />
         <div className="absolute inset-0 bg-black/35" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/20" />
