@@ -33,6 +33,16 @@ const more = [
     desc: "London Rooftop Soirées • Mayfair Club Nights • Winter 2024",
     image: "/events/event5.webp",
   },
+  {
+    title: "Saranda, Albania",
+    desc: "Turquoise beaches • Summer beach clubs • June - August",
+    image: "/events/event6.webp",
+  },
+  {
+    title: "Positano, Italy",
+    desc: "Amalfi Coast parties • Cliffside cocktails • June - September",
+    image: "/events/event7.webp",
+  },
 ];
 
 export default function OverseasEvents() {
@@ -81,13 +91,13 @@ export default function OverseasEvents() {
           Plus More Destinations
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {more.map((event, idx) => (
             <div
               key={idx}
               className="bg-[#111111] border border-[#E5B664]/40 rounded-lg overflow-hidden card-lift"
             >
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-32 overflow-hidden">
                 <Image
                   src={event.image}
                   alt={event.title}
@@ -97,11 +107,11 @@ export default function OverseasEvents() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent" />
               </div>
-              <div className="p-6 text-center">
-                <h3 className="text-[#E5B664] text-2xl font-serif font-semibold mb-2">
+              <div className="p-4 text-center">
+                <h3 className="text-[#E5B664] text-lg font-serif font-semibold mb-2">
                   {event.title}
                 </h3>
-                <p className="text-white/75 text-sm leading-relaxed">
+                <p className="text-white/75 text-xs leading-relaxed">
                   {event.desc}
                 </p>
               </div>
