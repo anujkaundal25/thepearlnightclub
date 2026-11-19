@@ -9,7 +9,7 @@ export default function AboutHero() {
       image="/about/hero.jpg"
     >
       <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-        <button className="w-full rounded-md border border-[#E5B664] px-6 py-3 font-semibold text-[#E5B664] transition-colors hover:bg-[#E5B664] hover:text-black sm:w-auto">
+        <button className="w-full rounded-md border border-[#E5B664] px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto">
           Book Your Event
         </button>
 
