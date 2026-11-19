@@ -6,17 +6,29 @@ import Image from "next/image";
 const featured = [
   {
     title: "Ibiza Beach Party",
-    desc: "Sunset fiestas • VIP beach club • Live DJ • July - August",
+    details: [
+      "Exclusive Beachside Celebration",
+      "VIP Clubs",
+      "Sunset DJ Sets",
+    ],
     image: "/events/event1.webp",
   },
   {
     title: "Mykonos Nights",
-    desc: "White isle parties • Rooftop cocktails • Celebrity guest nights • June - September",
+    details: [
+      "Cycladic Luxury Parties",
+      "Rooftop Cocktails",
+      "Island Nightlife",
+    ],
     image: "/events/event2.webp",
   },
   {
     title: "Dubai Luxury Nights",
-    desc: "Skyline rooftop events • Desert glam nights • Luxury yacht parties • October - March",
+    details: [
+      "Lavish Desert Coast Events",
+      "Infinity Pool Soirees",
+      "Skyline Views",
+    ],
     image: "/events/event3.webp",
   },
 ];
@@ -24,23 +36,41 @@ const featured = [
 const more = [
   {
     title: "Paris",
-    desc: "Paris Fashion Week Afterparties • Seine River Gala • Spring 2024",
+    details: [
+      "Paris Fashion Week Afterparties",
+      "Exclusive Fashion Week Events",
+      "Luxury Venue Takeovers",
+    ],
     image: "/events/event4.webp",
     position: "top",
   },
   {
     title: "London",
-    desc: "London Rooftop Soirées • Mayfair Club Nights • Winter 2024",
+    details: [
+      "London Rooftop Soirees",
+      "Skyline Rooftop Parties",
+      "Champagne & Canapés",
+    ],
     image: "/events/event5.webp",
   },
   {
-    title: "Saranda, Albania",
-    desc: "Turquoise beaches • Summer beach clubs • June - August",
+    title: "Saranda Albania",
+    details: [
+      "Ksamil Turquoise Beach Summer Beach Club",
+      "July - August",
+      "Turquoise Beach Club",
+      "Summer Season",
+    ],
     image: "/events/event6.webp",
   },
   {
-    title: "Positano, Italy",
-    desc: "Amalfi Coast parties • Cliffside cocktails • June - September",
+    title: "Positano Italy",
+    details: [
+      "Amalfi Coast Beach Party",
+      "Cliffside Cocktails",
+      "Coastal Celebrations",
+      "June - September",
+    ],
     image: "/events/event7.webp",
   },
 ];
@@ -76,9 +106,11 @@ export default function OverseasEvents() {
                 <h3 className="text-[#E5B664] text-2xl font-serif font-semibold mb-3">
                   {event.title}
                 </h3>
-                <p className="text-white/75 text-sm leading-relaxed">
-                  {event.desc}
-                </p>
+                <ul className="list-inside list-disc space-y-1.5 text-center text-sm leading-relaxed text-white/75">
+                  {event.details.map((detail) => (
+                    <li key={detail}>{detail}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
@@ -111,9 +143,11 @@ export default function OverseasEvents() {
                 <h3 className="text-[#E5B664] text-lg font-serif font-semibold mb-2">
                   {event.title}
                 </h3>
-                <p className="text-white/75 text-xs leading-relaxed">
-                  {event.desc}
-                </p>
+                <ul className="list-inside list-disc space-y-1 text-center text-xs leading-relaxed text-white/75">
+                  {event.details.map((detail) => (
+                    <li key={detail}>{detail}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
