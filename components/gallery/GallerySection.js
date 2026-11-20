@@ -10,6 +10,7 @@ const photos = [
   { src: "/gallery/gallery3.webp", title: "Red Carpet Arrival" },
   { src: "/gallery/gallery4.webp", title: "Rooftop Party" },
   { src: "/gallery/gallery5.webp", title: "Champagne Celebration" },
+  { src: "/gallery/gallery6.webp", title: "An evening of elegance and celebration" },
 ];
 
 export default function GallerySection() {
