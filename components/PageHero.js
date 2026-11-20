@@ -8,10 +8,10 @@ export default function PageHero({ eyebrow, title, subtitle, image, children }) 
         className="absolute inset-0 bg-cover bg-center brightness-125 contrast-110 saturate-110"
         style={{ backgroundImage: `url('${image}')` }}
       />
-      {/* <div
+      <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-[#0a0a0a]/35"
-      /> */}
+        className="absolute inset-0 z-[1] bg-black/30"
+      />
 
       <div className="relative z-10 mx-auto w-full max-w-5xl px-5 py-20 text-center sm:px-8">
         <div className="flex items-center justify-center gap-4 sm:gap-6">
