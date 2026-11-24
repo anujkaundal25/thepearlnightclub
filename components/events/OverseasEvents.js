@@ -75,6 +75,12 @@ const more = [
   },
 ];
 
+const additionalEvents = [
+  { title: "MONACO - yachts", image: "/events/event8.webp" },
+  { title: "ROME - Colosseum", image: "/events/event9.webp" },
+  { title: "MELBOURNE - Yarra skyline", image: "/events/event10.webp" },
+];
+
 export default function OverseasEvents() {
   return (
     <section className="py-20 px-4 bg-[#0a0a0a]">
@@ -150,6 +156,34 @@ export default function OverseasEvents() {
                 </ul>
               </div>
             </div>
+          ))}
+        </div>
+
+        <h2
+          className="text-center text-[#E5B664] text-sm sm:text-base font-semibold tracking-[0.3em] uppercase mt-16 mb-10"
+        >
+          More Overseas Events
+        </h2>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {additionalEvents.map((event) => (
+            <article
+              key={event.title}
+              className="group overflow-hidden rounded-lg border border-[#E5B664]/40 bg-[#111111]"
+            >
+              <div className="relative h-52 overflow-hidden">
+                <Image
+                  src={event.image}
+                  alt={event.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent" />
+              </div>
+              <h3 className="p-6 text-center text-xl font-semibold text-[#E5B664]">
+                {event.title}
+              </h3>
+            </article>
           ))}
         </div>
 
