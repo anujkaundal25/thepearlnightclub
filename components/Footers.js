@@ -82,10 +82,10 @@ export default function Footers() {
                 <FaPhoneAlt size={16} className="text-[#E5B664] mt-1 shrink-0" />
                 <span>61 410 036 729</span>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <FaMapMarkerAlt size={16} className="text-[#E5B664] mt-1 shrink-0" />
                 <span>149 Waymoth St, Adelaide 5000</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
