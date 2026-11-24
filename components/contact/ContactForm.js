@@ -75,7 +75,7 @@ export default function ContactForm() {
       value: "https://thepearlnightclub.com/",
       href: "https://thepearlnightclub.com/",
     },
-    { icon: <FaMapMarkerAlt />, label: "Location", value: "777 Ocean Drive, Miami, FL 33139" },
+    { icon: <FaMapMarkerAlt />, label: "Location", value: "149 Waymoth St, Adelaide 5000" },
     { icon: <FaClock />, label: "Opening Hours", value: "Thu–Sat • 8PM – 3AM" },
   ];
 

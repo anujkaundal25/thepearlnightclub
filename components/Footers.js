@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaWhatsapp, FaInstagram, FaFacebookF, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebookF, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footers() {
   return (
@@ -81,6 +81,10 @@ export default function Footers() {
               <li className="flex items-start gap-3">
                 <FaPhoneAlt size={16} className="text-[#E5B664] mt-1 shrink-0" />
                 <span>61 410 036 729</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt size={16} className="text-[#E5B664] mt-1 shrink-0" />
+                <span>149 Waymoth St, Adelaide 5000</span>
               </li>
             </ul>
           </div>
