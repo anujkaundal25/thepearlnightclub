@@ -169,14 +169,14 @@ export default function OverseasEvents() {
           {additionalEvents.map((event) => (
             <article
               key={event.title}
-              className="group overflow-hidden rounded-lg border border-[#E5B664]/40 bg-[#111111]"
+              className="card-lift group overflow-hidden rounded-lg border border-[#E5B664]/40 bg-[#111111]"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
                   src={event.image}
                   alt={event.title}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent" />
               </div>
