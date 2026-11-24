@@ -1,16 +1,25 @@
 "use client";
 
+import Image from "next/image";
+
 export default function PageHero({ eyebrow, title, subtitle, image, children }) {
   return (
     <section className="relative flex min-h-[65vh] w-full items-center justify-center overflow-hidden bg-[#0a0a0a] sm:min-h-[65vh]">
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-center brightness-125 contrast-110 saturate-110"
-        style={{ backgroundImage: `url('${image}')` }}
+      <Image
+        src={image}
+        alt=""
+        fill
+        priority
+        quality={100}
+        sizes="100vw"
+        className="object-cover object-center"
+        style={{
+          filter: "brightness(1.08) contrast(1.12) saturate(1.08)",
+        }}
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 z-[1] bg-black/30"
+        className="absolute inset-0 z-[1] bg-black/[0.04]"
       />
 
       <div className="relative z-10 mx-auto w-full max-w-5xl px-5 py-20 text-center sm:px-8">

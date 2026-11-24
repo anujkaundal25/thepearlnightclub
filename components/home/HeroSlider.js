@@ -6,12 +6,20 @@ export default function HeroSection() {
   return (
     <section className="relative isolate w-full min-h-[90svh] overflow-hidden bg-[#0a0a0a]">
       <div aria-hidden="true" className="absolute inset-0">
-        <div
-          className="h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/hero-section/home-hero-bg.jpeg')` }}
+        <Image
+          src="/hero-section/home-hero-bg.jpeg"
+          alt=""
+          fill
+          priority
+          quality={100}
+          sizes="100vw"
+          className="object-cover object-center"
+          style={{
+            filter: "brightness(1.08) contrast(1.12) saturate(1.08)",
+          }}
         />
       </div>
-      <div aria-hidden="true" className="absolute inset-0 z-[1] bg-black/20" />
+      <div aria-hidden="true" className="absolute inset-0 z-[1] bg-black/[0.04]" />
 
       <div className="relative z-10 flex min-h-[90svh] flex-col items-center justify-center px-4 py-12 text-center sm:px-6">
         <div className="mb-3">
@@ -23,6 +31,7 @@ export default function HeroSection() {
             className="mx-auto h-auto w-[min(58vw,220px)] object-contain sm:w-[300px]"
             style={{ filter: "drop-shadow(0 0 12px rgba(212,175,55,0.5))" }}
             priority
+            quality={100}
           />
         </div>
 
@@ -42,7 +51,7 @@ export default function HeroSection() {
         </p>
 
         <div className="mt-7 w-full max-w-5xl sm:mt-9">
-          <div className="overflow-hidden rounded-xl border border-[#E5B664]/60 bg-[#111111]/95 shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-none sm:backdrop-blur-md">
+          <div className="overflow-hidden rounded-xl border border-[#E5B664]/60 bg-[#111111]/98 shadow-[0_12px_40px_rgba(0,0,0,0.6)]">
             <div className="flex flex-col items-stretch md:flex-row">
               <div className="flex min-w-0 flex-1 items-center gap-3 border-b border-[#E5B664]/25 px-4 py-4 sm:px-5 md:border-b-0 md:border-r">
                 <FiSearch className="text-[#E5B664] text-xl shrink-0" />
